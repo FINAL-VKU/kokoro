@@ -12,6 +12,7 @@
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
     "@reduxjs/toolkit": "^2.3.0",
+    "@safe-global/safe-ethers-adapters": "^0.1.0-alpha.19",
     "@thirdweb-dev/react": "3.14.41",
     "@thirdweb-dev/sdk": "^3.0.8",
     "@types/bootstrap": "^5.0.16",
