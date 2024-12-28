@@ -4,7 +4,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 // import {getUserByToken, login} from "../../../apis/authApi";
 import {STORAGE} from "../../../utils/storage";
-import {authApis, getUserByToken, login} from "../../../apis/authApi";
+import {authApis, getUserByToken} from "../../../apis/authApi";
 import {useDispatch} from "react-redux";
 import {loginWeb} from "../../../context/userSlice";
 

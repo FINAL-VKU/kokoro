@@ -2,7 +2,7 @@ import {postJSONWithoutAuth} from "./fetch";
 
 
 export const login = (email, password) => {
-    return fetch(`http://localhost:9016/mobile/sign-in`, {
+    return fetch(`https://grandemy.peacom.co/mobile/sign-in`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -38,7 +38,7 @@ export const getUserByToken = () => {
 }
 export const authApis = {
     login: (email, password) =>
-        postJSONWithoutAuth(`http://localhost:3000/mobile/sign-in`, {
+        postJSONWithoutAuth(`https://grandemy.peacom.co/mobile/sign-in`, {
             email,
             password,
         }),

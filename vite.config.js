@@ -14,16 +14,10 @@ export default defineConfig({
       // this is almost certainly a bug in wagmi (or these libraries transatively
       // and likely can be removed in the future
       external: [
-        "@safe-global/safe-ethers-adapters",
         "@safe-globalThis/safe-ethers-adapters",
         "@safe-globalThis/safe-core-sdk",
         "@safe-globalThis/safe-ethers-lib"
       ],
     },
-  },
-  resolve: {
-    alias: {
-      '@safe-global/safe-ethers-adapters': 'node_modules/@safe-global/safe-ethers-adapters'
-    }
   }
 });
