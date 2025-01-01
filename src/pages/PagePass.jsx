@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
 import { useStateContext } from '../context'
-import DisplayCampaignDetail from "../components/DisplayCampaignDetail";
-import DefaultPackagePass from "../components/DetailPackagePass";
 import DetailPackagePass from "../components/DetailPackagePass";
 
 const PagePass = () => {

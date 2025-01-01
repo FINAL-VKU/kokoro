@@ -42,7 +42,7 @@ export function Login() {
       >
         <form onSubmit={onSubmit(handleSubmit)}
               className="flex h-[calc(100vh-95px)] flex-col justify-center items-center outline-none position-relative"
-              style={{ backgroundColor: "white", height: "400px", width: "40%", borderRadius: 40}}
+              style={{ backgroundColor: "white", height: "400px", width: "400px", borderRadius: 40}}
         >
 
           <p className="place-self-start font-semibold text-base text-[#FF69B4] mx-12">Welcome Back! Take a Deep Breath.</p>

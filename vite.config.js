@@ -10,9 +10,6 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
-      // this is included because it breaks the build if not included
-      // this is almost certainly a bug in wagmi (or these libraries transatively
-      // and likely can be removed in the future
       external: [
         "@safe-globalThis/safe-ethers-adapters",
         "@safe-globalThis/safe-core-sdk",

@@ -18,7 +18,6 @@ const Profile = () => {
   useEffect(() => {
     if(contract) fetchCampaigns();
   }, [address, contract]);
-  console.log("checkkckckckckckc", campaignsOfUser)
   return (
     <DisplayCampaignDetail
       title="Mental Health Care Package"

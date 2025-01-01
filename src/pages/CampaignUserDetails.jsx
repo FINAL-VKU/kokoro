@@ -35,7 +35,7 @@ const CampaignUserDetails = () => {
   // console.log("check get usser campaign", state)
   const fetchCancelPassPackage = async () => {
     setIsLoading(true)
-    // await handleCancelPass(state.campaign.campaignId)
+    await handleCancelPass(state.campaign.campaignId)
     setIsLoading(false)
   }
   useEffect(() => {
@@ -119,7 +119,7 @@ const CampaignUserDetails = () => {
                 <p className="mt-[20px] font-epilogue font-normal leading-[22px] text-[#808191]">Please make sure to input the correct amount you paid for the purchase.</p>
               </div>
 
-              {state.campaign.isPassed !== true ?
+              {state.campaign.sellers && !state.campaign.sellers.length > 0 ?
                   <CustomButton
                       btnType="button"
                       title="Sell a Health Package"
