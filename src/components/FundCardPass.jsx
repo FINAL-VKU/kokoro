@@ -7,7 +7,7 @@ import {useLocation} from "react-router-dom";
 
 const FundCardPass = ({ campaign, handleClick, activeSellers }) => {
   const transfer = useSelector((state) => state.transfer.transfer);
-  const {owner, title, description, target, deadline, amountCollected, image} = campaign
+  const {owner, title, description, target, deadline, amountCollected, image, sellers} = campaign
   const remainingDays = daysLeft(deadline);
   return (
     <div className="sm:w-[288px] w-full rounded-[15px] bg-[#1c1c24] cursor-pointer" onClick={handleClick}>
@@ -18,7 +18,7 @@ const FundCardPass = ({ campaign, handleClick, activeSellers }) => {
           <img src={tagType} alt="tag" className="w-[17px] h-[17px] object-contain"/>
           <p className="ml-[12px] mt-[2px] font-epilogue font-medium text-[12px] text-[#808191]">Mental Wellness</p>
         </div>
-        {activeSellers && <p className="mt-[2px] font-epilogue font-medium text-[14px] text-[green]">Currently transferring 🌈</p>}
+        {sellers && sellers?.length > 0 && <p className="mt-[2px] font-epilogue font-medium text-[14px] text-[green]">Currently transferring 🌈</p>}
 
         <div className="block">
           <h3 className="font-epilogue font-semibold text-[16px] text-white text-left leading-[26px] truncate">{title}</h3>
