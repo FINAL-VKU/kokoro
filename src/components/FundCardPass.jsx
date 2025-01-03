@@ -3,7 +3,6 @@ import React from 'react';
 import { tagType, thirdweb } from '../assets';
 import { daysLeft } from '../utils';
 import {useSelector} from "react-redux";
-import {useLocation} from "react-router-dom";
 
 const FundCardPass = ({ campaign, handleClick, activeSellers }) => {
   const transfer = useSelector((state) => state.transfer.transfer);
